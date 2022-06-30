@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>🖥 Contacto | Juan Tarca</title>
+</head>
+<body>
+    <div id="progressBar"></div>
+    <div id="progressBarContainer"></div>
+    <header class="container">
+        <nav class="nav-bar"> 
+            <ul>
+                <li> <a href="index.html">  INICIO </a> </li>
+                <li> <a href="about-me.html"> SOBRE MI </a></li>
+                <li> <a href="#contacto"> CONTACTO </a> </li>
+            </ul>
+        
+        </nav>
+       
+        
+        <div id="contact-form">
+            <div>
+                <h2>Contactate conmigo!</h2>
+                <form action="https://formsubmit.co/juan.tarca1@gmail.com" method="POST">
+                    <label for="Name">Nombre</label>
+                    <input type="text" name="name">
+
+                    <label for="email">Correo Electronico</label>
+                    <input type="text" name="email">
+
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject">
+
+                    <label for="comments">Comentarios</label>
+                    <input type="text" name="comments">
+                    <input type="sumbit" value="Enviar">
+                </form>
+            </div>
+            <div>
+                Hola
+            </div>
+        </div>
+       tempore doloremque libero, optio dolorem, quis aperiam totam architecto minima quia delectus consectetur aut facere!</p>
+      
+
+    </header> 
+    <script>
+        const progressBar = document.querySelector("#progressBar");
+        let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = () => {
+        let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
+        progressBar.style.height = `${newProgressHeight}%`;
+        progressBar.style.opacity = `${newProgressHeight}%`;
+        };
+        </script>
+</body>
+</html>

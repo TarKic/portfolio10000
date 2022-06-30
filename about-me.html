@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="aboutme.css">
+    <title>🖥 About Me | Juan Tarca</title>
+      
+    <header>
+        <div id="progressBar"> </div>
+        <div id="progressBarContainer"></div>
+
+        <nav class="nav-bar"> 
+            <ul>
+                <li> <a href="index.html">  INICIO </a> </li>
+                <li> <a href="about-me.html"> SOBRE MI </a></li>
+                <li> <a href="contact.html"> CONTACTO </a> </li>
+            </ul>
+        
+        </nav>
+       
+         <div class="container">
+            <h2>Hola!</h2>
+            <p class="name"> Soy Juan, un desarrollador Frontend Jr. en búsqueda de nuevas experiencias. Actualmente me encuentro cursando la carrera de Ingeniería informática en la UADE y me considero apasionado por la tecnología y la codificación.</p>
+            <img class="img" src="https://media-exp1.licdn.com/dms/image/C5603AQEHfxK6lY70gQ/profile-displayphoto-shrink_200_200/0/1609859160746?e=1633564800&v=beta&t=EeidmUBANbFH0SatUzFsS1Sd182MLLqvz12yR8u_aCo" alt="">
+         </div>
+
+       <div >
+           <div class="container">
+               <h2>Conocimientos:</h2>
+           </div>
+
+           <div class="knowleadge">
+               <img class="types" id="type" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+               <img class="types" id="type" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="">
+               <img class="types" id="type" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="">
+               <img class="types" id="type" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="">
+               <img class="types" id="type" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" alt="">
+
+           </div>
+        
+    
+        <script>
+            const progressBar = document.querySelector("#progressBar");
+            let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = () => {
+              let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
+              progressBar.style.height = `${newProgressHeight}%`;
+              progressBar.style.opacity = `${newProgressHeight}%`;
+            };
+            </script>
+       </div>
+    
+    </header> 
+
+
+</head>
+<body>
+    
+</body>
+</html>
